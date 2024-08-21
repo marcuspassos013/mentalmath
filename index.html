@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercícios de Matemática</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Gerador de Cálculos</h1>
+  <form id="exercise-form">
+    <label for="num-exercises">Número de exercícios:</label>
+    <input type="number" id="num-exercises" value="10" />
+    <br />
+    <label for="num-digits-num1">Número de dígitos para o número 1:</label>
+    <input type="number" id="num-digits-num1" value="1" />
+    <br />
+    <label for="num-digits-num2">Número de dígitos para o número 2:</label>
+    <input type="number" id="num-digits-num2" value="1" />
+    <br />
+    <label for="operation-select">Operações:
+      <div id="operation-select">
+        <input type="checkbox" value="adicao" id="adicao">Adição
+        <input type="checkbox" value="subtracao" id="subtracao">Subtração
+        <input type="checkbox" value="multiplicacao" id="multiplicacao">Multiplicação
+        <input type="checkbox" value="potenciacao" id="potenciacao">Potenciação
+        <input type="checkbox" value="raizQuadrada" id="raizQuadrada">Radiciação
+      </div>
+    </label>
+    <br />
+    <label for="time-select">Tempo:</label>
+    <select id="time-select">
+      <option value="30">30 segundos</option>
+      <option value="60">1 minuto</option>
+      <option value="90">1.5 minutos</option>
+      <option value="120">2 minutos</option>
+    </select>
+    <br />
+    <button type="submit">Gerar exercícios</button>
+  </form>
+
+  <!-- Modal para mostrar os exercícios -->
+  <div id="exercise-modal-container">
+    <div id="exercise-modal">
+      <p id="exercise-timer" class="timer"></p>
+      <h2>Exercícios</h2>
+      <div id="exercises-container"></div>
+      <button id="submit-exercises">Enviar</button>
+      <button id="close-exercise-modal">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal para mostrar as respostas -->
+  <div id="modal-container">
+    <div id="modal">
+      <h2>Respostas</h2>
+      <div id="results-container"></div>
+      <button id="close-modal">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
