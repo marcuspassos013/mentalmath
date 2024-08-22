@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 h1 {
@@ -95,8 +95,8 @@ button[type="submit"]:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 #modal {
@@ -108,6 +108,8 @@ button[type="submit"]:hover {
   max-width: 800px;
   max-height: 80%;
   overflow: auto;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 #modal h2 {
@@ -129,8 +131,8 @@ button[type="submit"]:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 #exercise-modal {
@@ -142,6 +144,8 @@ button[type="submit"]:hover {
   max-width: 800px;
   max-height: 80%;
   overflow: auto;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 #exercise-modal h2 {
